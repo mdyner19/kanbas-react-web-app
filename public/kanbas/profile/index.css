@@ -1,0 +1,145 @@
+.wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.kanbas-navigation-wrapper {
+    align-items: top;
+    width: 80px;
+    display:flex;
+    flex:0;
+    background-color: black;
+}
+
+.list-group.kanbas-navigation {
+    width: inherit;
+    list-style-type: none;
+}
+
+.kanbas-navigation-li {
+    text-align: center;
+    background-color: black;
+    width: inherit;
+}
+
+.list-group-item.kanbas-navigation {
+    background-color: black;
+    width: inherit;
+    color: white;
+    font-size: 14px;
+    padding: 5px;    
+    display: grid;
+}
+
+.kanbas-navigation-labels {
+    margin: 5px 0 0;
+}
+
+.list-group-item.kanbas-navigation.active {
+    background-color: white;
+    color:red;
+    border:none;
+}
+
+.main-content-wrapper {
+    margin: 0 25px 0;
+    width: 100%;
+}
+
+.profile-page-header {
+    padding: 10px;
+}
+
+.profile-page-name {
+    margin: 0 10px 0;
+    font-size: 20px;
+}
+
+.col.account-navigation-wrapper {
+    flex: 0;
+}
+
+.col.edit-profile {
+    flex:0;
+}
+
+.list-group.account-navigation {
+    list-style-type: none;
+    width: inherit;
+}
+
+.list-group-item.account-navigation {
+    border: none;
+    color: red;
+    text-wrap: wrap;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.list-group-item.account-navigation.active {
+    border: none;
+    color: black;
+    background-color: white;
+    border-left: solid;
+}
+
+.btn-secondary.edit-profile {
+    color: black;
+    border: none;
+    margin-right: 0;
+    width: 135px;
+    font-size: 14px;
+}
+
+.name {
+    margin: 10px 0 0 0;
+}
+
+.profile-labels {
+    margin: 10px 0 10px 0;
+}
+.profile-links {
+    text-decoration: none;
+    color: red;
+}
+
+.edit-profile-input {
+    font-weight: bold;
+}
+
+.edit-profile-headers {
+    margin: 15px 0 0 0;
+}
+
+.col.edit-profile-links {
+    flex: 0;
+}
+
+.edit-profile-links-header {
+    width: inherit;
+    text-align: center;
+    font-weight: bold;
+}
+.form-control.edit-profile-link-input {
+    width: 200px;
+}
+
+.col.edit-profile-links.arrow {
+    margin-top: 35px;
+    padding: 0;
+}
+
+.bottom-btns {
+    display: flex;
+}
+
+.btn-secondary.bottom-btns {
+    font-size: 14px;
+    color: black;
+    height: 35px;
+}
+
+.btn-danger.bottom-btns {
+    font-size: 14px;
+    height: 35px;
+}

@@ -1,0 +1,55 @@
+.wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.dashboard-label {
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.dashboard-hr {
+    margin: 10px 0 20px;
+}
+
+.main-content-wrapper {
+    margin: 0 25px 0;
+    width: 100%;
+}
+
+.cards-wrapper {
+    margin: 15px;
+}
+
+.published-courses-label {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.cards-wrapper {
+    margin: 0 25px;
+}
+
+.card.course-card {
+    margin: 15px;
+    width: 235px;
+}
+
+.course-link {
+    text-decoration: none;
+}
+
+.card-body.desc {
+    padding: 12px;
+}
+
+.card-text-header {
+    color: gray;
+    margin: 0;
+}
+
+.card-text {
+    color: gray;
+    font-size: 12px;
+}

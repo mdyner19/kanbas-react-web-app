@@ -1,203 +1,252 @@
-<table width="100%">
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="../account.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="../courses.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="../home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Modules</a>
-                    </li>
-                    <li>
-                        <a href="#">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="#">Zoom Meetings</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="#">Quizzes</a>
-                    </li>
-                    <li>
-                        <a href="../grades.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Panopto Video</a>
-                    </li>
-                    <li>
-                        <a href="#">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="#">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="#">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="#">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <input id="assignment-search" placeholder="Search For Assignments"/>
-                <button type="button">Group</button>
-                <button type="button">Assignment</button>
-                <select id="assignment-dates-select">
-                    <option>Edit Assignment Dates</option>
-                </select>
+<head>
+    <link href="index.css" rel="stylesheet" />
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+</head>
+
+<div class="wrapper">
+    <div class="kanbas-navigation-wrapper">
+        <ul class="list-group kanbas-navigation">
+            <li class="kanbas-navigation-li">
+                <a href="../kanbasnavigation.html" class="list-group-item kanbas-navigation">
+                    <span class="kanbas-navigation-labels">
+                        <img src="../../NEUicon.png" height="50px" />
+                    </span>
+                </a>
+            </li>
+            <li class="kanbas-navigation-li">
+                <a href="../profile/index.html" class="list-group-item kanbas-navigation">
+                    <i class="fas fa-user-circle fa-2x" style="color: white"></i>
+                    <span class="kanbas-navigation-labels">Account</span></a>
+            </li>
+            <li class="kanbas-navigation-li">
+                <a href="../dashboard.html" class="list-group-item kanbas-navigation">
+                    <i class="fas fa-tachometer-alt fa-2x" style="color: red"></i>
+                    <span class="kanbas-navigation-labels">Dashboard</span></a>
+            </li>
+            <li class="kanbas-navigation-li">
+                <a href="#" class="list-group-item kanbas-navigation active">
+                    <i class="fas fa-book fa-2x" style="color: red"></i>
+                    <span class="kanbas-navigation-labels">Courses</span></a>
+            </li>
+            <li class="kanbas-navigation-li">
+                <a href="#" class="list-group-item kanbas-navigation">
+                    <i class="far fa-calendar-alt fa-2x" style="color: red"></i>
+                    <span class="kanbas-navigation-labels">Calendar</span></a>
+            </li>
+            <li class="kanbas-navigation-li">
+                <a href="#" class="list-group-item kanbas-navigation">
+                    <i class="fas fa-envelope-open-text fa-2x" style="color: red"></i>
+                    <span class="kanbas-navigation-labels">Inbox</span></a>
+            </li>
+            <li class="kanbas-navigation-li">
+                <a href="#" class="list-group-item kanbas-navigation">
+                    <i class="far fa-clock fa-2x" style="color: red"></i>
+                    <span class="kanbas-navigation-labels">History</span></a>
+            </li>
+            <li class="kanbas-navigation-li">
+                <a href="#" class="list-group-item kanbas-navigation">
+                    <i class="fas fa-desktop fa-2x" style="color: red"></i>
+                    <span class="kanbas-navigation-labels">Studio</span></a>
+            </li>
+            <li class="kanbas-navigation-li">
+                <a href="#" class="list-group-item kanbas-navigation">
+                    <i class="fas fa-sign-out-alt fa-2x" style="color: red"></i>
+                    <span class="kanbas-navigation-labels">Commons</span></a>
+            </li>
+            <li class="kanbas-navigation-li">
+                <a href="#" class="list-group-item kanbas-navigation">
+                    <i class="far fa-question-circle fa-2x" style="color: red"></i>
+                    <span class="kanbas-navigation-labels">Help</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content-wrapper">
+        <div class="row">
+            <span class="course-page-header">
+                <i class="fas fa-bars" style="color: red"></i>
+                <span class="course-page-name">
+                    <label for="course-page-name">
+                        CS4550.12631.202410 > Assignments
+                    </label>
+                </span>
                 <hr>
-                <h3>ASSIGNMENTS 40% of Total
-                    <select id="edit-assignments">
-                        <option>Edit</option>
-                    </select>
-                </h3>
-                <ul>
-                    <li>
-                        <a href="edit.html">A1 - ENV + HTML <br/>
-                            Multiple Modules</a>
-                            | Not available yet
+            </span>
+        </div>
+        <div class="row">
+            <div class="col course-navigation-wrapper">
+                <ul class="list-group course-navigation">
+                    <li class="course-navigation-li">
+                        <a href="../home.html" class="list-group-item course-navigation">Home</a>
                     </li>
-                    <li>
-                        <a href="edit.html">A2 - CSS + BOOTSTRAP <br/>
-                            Multiple Modules</a>
-                            | Not available yet
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Modules</a>
                     </li>
-                    <li>
-                        <a href="edit.html">A3 - JS + REACT <br/>
-                            Multiple Modules</a>
-                            | Not available yet
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Piazza</a>
                     </li>
-                    <li>
-                        <a href="edit.html">A4 - STATE + REDUX <br/>
-                            Multiple Modules</a>
-                            | Not available yet
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Zoom Meetings</a>
                     </li>
-                    <li>
-                        <a href="edit.html">A5 - NODE + SESSION <br/>
-                            Multiple Modules</a>
-                            | Not available yet
+                    <li class="course-navigation-li">
+                        <a href="index.html" class="list-group-item course-navigation active">Assignments</a>
                     </li>
-                    <li>
-                        <a href="edit.html">A6 - MONGO + MONGOOSE <br/>
-                            Multiple Modules</a>
-                            | Not available yet
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Quizzes</a>
                     </li>
-                </ul>
-                <h3>QUIZZES 10% of Total
-                    <select id="edit-quizzes">
-                        <option>Edit</option>
-                    </select>
-                </h3>
-                <ul>
-                    <li>
-                        <a href="edit.html">Q1 - HTML <br/>
-                            Multiple Modules</a>
-                            | Not available yet
+                    <li class="course-navigation-li">
+                        <a href="../grades.html" class="list-group-item course-navigation">Grades</a>
                     </li>
-                    <li>
-                        <a href="edit.html">Q2 - CSS <br/>
-                            Multiple Modules</a>
-                            | Not available yet
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">People</a>
                     </li>
-                    <li>
-                        <a href="edit.html">Q3 - JS, ES6 <br/>
-                            Multiple Modules</a>
-                            | Not available yet
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Panopto Video</a>
                     </li>
-                    <li>
-                        <a href="edit.html">Q4 - NODE <br/>
-                            Multiple Modules</a>
-                            | Not available yet
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Discussions</a>
                     </li>
-                    <li>
-                        <a href="edit.html">Q5 - MONGO <br/>
-                            Multiple Modules</a>
-                            | Not available yet
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Announcements</a>
+                    </li>
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Pages</a>
+                    </li>
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Files</a>
+                    </li>
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Rubrics</a>
+                    </li>
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Outcomes</a>
+                    </li>
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Collaborations</a>
+                    </li>
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Syllabus</a>
+                    </li>
+                    <li class="course-navigation-li">
+                        <a href="#" class="list-group-item course-navigation">Settings</a>
                     </li>
                 </ul>
-                <h3>EXAMS 20% of Total
-                    <select id="edit-exams">
-                        <option>Edit</option>
-                    </select>
-                </h3>
-                <ul>
-                    <li>
-                        <a href="edit.html">Midterm<br/>
-                            Multiple Modules</a>
-                            | Not available yet
-                    </li>
-                    <li>
-                        <a href="edit.html">Final<br/>
-                            Multiple Modules</a>
-                            | Not available yet
-                    </li>
-                </ul>
-                <h3>PROJECT 30% of Total
-                    <select id="edit-project">
-                        <option>Edit</option>
-                    </select>
-                </h3>
-                <ul>
-                    <li>
-                        <a href="edit.html">Project<br/>
-                            Multiple Modules</a>
-                            | Not available yet
-                    </li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
-            
+            </div>
+        </div>
+        <div class="row">
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                            <input id="assignment-search" placeholder="Search For Assignments" />
+                            <button type="button">Group</button>
+                            <button type="button">Assignment</button>
+                            <select id="assignment-dates-select">
+                                <option>Edit Assignment Dates</option>
+                            </select>
+                            <hr>
+                            <h3>ASSIGNMENTS 40% of Total
+                                <select id="edit-assignments">
+                                    <option>Edit</option>
+                                </select>
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a href="edit.html">A1 - ENV + HTML <br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                                <li>
+                                    <a href="edit.html">A2 - CSS + BOOTSTRAP <br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                                <li>
+                                    <a href="edit.html">A3 - JS + REACT <br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                                <li>
+                                    <a href="edit.html">A4 - STATE + REDUX <br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                                <li>
+                                    <a href="edit.html">A5 - NODE + SESSION <br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                                <li>
+                                    <a href="edit.html">A6 - MONGO + MONGOOSE <br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                            </ul>
+                            <h3>QUIZZES 10% of Total
+                                <select id="edit-quizzes">
+                                    <option>Edit</option>
+                                </select>
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a href="edit.html">Q1 - HTML <br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                                <li>
+                                    <a href="edit.html">Q2 - CSS <br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                                <li>
+                                    <a href="edit.html">Q3 - JS, ES6 <br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                                <li>
+                                    <a href="edit.html">Q4 - NODE <br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                                <li>
+                                    <a href="edit.html">Q5 - MONGO <br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                            </ul>
+                            <h3>EXAMS 20% of Total
+                                <select id="edit-exams">
+                                    <option>Edit</option>
+                                </select>
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a href="edit.html">Midterm<br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                                <li>
+                                    <a href="edit.html">Final<br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                            </ul>
+                            <h3>PROJECT 30% of Total
+                                <select id="edit-project">
+                                    <option>Edit</option>
+                                </select>
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a href="edit.html">Project<br />
+                                        Multiple Modules</a>
+                                    | Not available yet
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

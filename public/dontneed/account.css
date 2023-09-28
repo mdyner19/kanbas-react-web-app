@@ -1,0 +1,34 @@
+.kanbas-navigation-wrapper {
+    align-items: center;
+    width: 80px;
+    display:flex;
+}
+
+.list-group.kanbas-navigation {
+    width: inherit;
+    list-style-type: none;
+}
+
+.kanbas-navigation-li {
+    text-align: center;
+    background-color: black;
+    width: inherit;
+}
+
+.list-group-item.kanbas-navigation {
+    background-color: black;
+    width: inherit;
+    color: white;
+    font-size: 14px;
+    padding: 3px;    
+    display: grid;
+}
+
+.kanbas-navigation-labels {
+    margin: 5px 0 0;
+}
+
+.list-group-item.kanbas-navigation.active {
+    background-color: white;
+    color:red;
+}
