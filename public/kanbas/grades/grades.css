@@ -117,6 +117,8 @@
 
 .student-name {
     color: red;
+    font-weight: normal;
+    font-size: 16px;
 }
 
 .grade-input {
