@@ -8,7 +8,7 @@
     <div class="kanbas-navigation-wrapper">
         <ul class="list-group kanbas-navigation">
             <li class="kanbas-navigation-li">
-                <a href="../kanbasnavigation.html" class="list-group-item kanbas-navigation">
+                <a href="../kanbasnavigation/kanbasnavigation.html" class="list-group-item kanbas-navigation">
                     <span class="kanbas-navigation-labels">
                         <img src="../../NEUicon.png" height="50px" />
                     </span>
@@ -20,7 +20,7 @@
                     <span class="kanbas-navigation-labels">Account</span></a>
             </li>
             <li class="kanbas-navigation-li">
-                <a href="../dashboard.html" class="list-group-item kanbas-navigation">
+                <a href="../dashboard/dashboard.html" class="list-group-item kanbas-navigation">
                     <i class="fas fa-tachometer-alt fa-2x" style="color: red"></i>
                     <span class="kanbas-navigation-labels">Dashboard</span></a>
             </li>
@@ -63,21 +63,27 @@
     </div>
     <div class="main-content-wrapper">
         <div class="row">
-            <span class="course-page-header">
-                <i class="fas fa-bars" style="color: red"></i>
-                <span class="course-page-name">
-                    <label for="course-page-name">
-                        CS4550.12631.202410 > Assignments > A1
-                    </label>
-                </span>
-                <hr>
-            </span>
+            <div class="assignment-page-header">
+                <div class="col header">
+                    <nav class="header-left" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb header">
+                            <i class="fas fa-bars top-left" style="color: red"></i>
+                            <li class="breadcrumb-item course-page-name">
+                                <label for="course-page-name"> CS4550.12631.202410</label>
+                            </li>
+                            <li class="breadcrumb-item course-page-name">Assignments</li>
+                            <li class="breadcrumb-item active course-page-name" aria-current="page">A1 - HTML</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <hr>
         </div>
         <div class="row">
             <div class="col course-navigation-wrapper">
                 <ul class="list-group course-navigation">
                     <li class="course-navigation-li">
-                        <a href="../home.html" class="list-group-item course-navigation">Home</a>
+                        <a href="../home/home.html" class="list-group-item course-navigation">Home</a>
                     </li>
                     <li class="course-navigation-li">
                         <a href="#" class="list-group-item course-navigation">Modules</a>
@@ -89,14 +95,13 @@
                         <a href="#" class="list-group-item course-navigation">Zoom Meetings</a>
                     </li>
                     <li class="course-navigation-li">
-                        <a href="index.html"
-                            class="list-group-item course-navigation active">Assignments</a>
+                        <a href="index.html" class="list-group-item course-navigation active">Assignments</a>
                     </li>
                     <li class="course-navigation-li">
                         <a href="#" class="list-group-item course-navigation">Quizzes</a>
                     </li>
                     <li class="course-navigation-li">
-                        <a href="../grades.html" class="list-group-item course-navigation">Grades</a>
+                        <a href="../grades/grades.html" class="list-group-item course-navigation">Grades</a>
                     </li>
                     <li class="course-navigation-li">
                         <a href="#" class="list-group-item course-navigation">People</a>
@@ -133,131 +138,190 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="row">
-            <table width="100%">
-                <tbody>
-                    <tr>
-                        <td valign="top">
-                            <select id="speed-grader">
-                                <option>SpeedGrader</option>
+            <div class="col main-content d-block">
+                <span class="assignment-page-sub-header">
+                    <div class="float-end top-btns">
+                        <span class="published">
+                            <i class="fas fa-check-circle"></i>
+                            Published
+                        </span>
+                        <button type="button" class="btn btn-secondary top-btns">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <hr class="top-btns-hr">
+                </span>
+                <div class="main-assignment-content">
+                    <div class="row">
+                        Assignment Name
+                        <input id="search-input" placeholder="A1 - HTML" class="form-control assignment-info-fields" />
+                        <textarea name="biography-info" rows="5" cols="40" class="form-control assignment-info-fields">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+                            </textarea>
+                    </div>
+                    <div class="row input-fields">
+                        <div class="col input-name">
+                            <span class="input-field-name">
+                                <span class="float-end">Points
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col input-field">
+                            <input type="number" id="search-input" placeholder="100"
+                                class="form-control assignment-info-fields-lower" />
+                        </div>
+                    </div>
+                    <div class="row input-fields">
+                        <div class="col input-name">
+                            <span class="input-field-name">
+                                <span class="float-end">Assignment Group
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col input-field">
+                            <select class="form-control assignment-info-fields-lower">
+                                <option>Assignments</option>
+                                <option>Quizzes</option>
+                                <option>Exams</option>
+                                <option>Project</option>
                             </select>
-                            <hr>
-                            <label for="assignment-name">
-                                <h3>Assignment Name</h3>
-                            </label>
-                            <input id="assignment-name" /> <br />
-                            <br />
-                            <textarea name="assignment-description">
-                                Assignment description
-                            </textarea> <br />
-                            <br />
-                            <label for="assignment-points">
-                                Points
-                            </label>
-                            <br />
-                            <input id="assignment-points" type="number" placeholder="100" /><br />
-                            <br />
-                            <label for="assignment-group">
-                                Assignment Group
-                            </label>
-                            <br />
-                            <select id="assignment-group">
-                                <option>ASSIGNMENTS</option>
-                            </select> <br />
-                            <br />
-                            <label for="display-grade">
-                                Display Grade as
-                            </label>
-                            <br />
-                            <select id="display-grade">
+                        </div>
+                    </div>
+                    <div class="row input-fields">
+                        <div class="col input-name">
+                            <span class="input-field-name">
+                                <span class="float-end">Display Grade as
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col input-field">
+                            <select class="form-control assignment-info-fields-lower">
                                 <option>Percentage</option>
-                            </select> <br />
-                            <br />
-                            <label for="submission-type">
-                                Submission Type
-                            </label>
-                            <br />
-                            <select id="submission-type">
-                                <option>Online</option>
-                            </select><br />
-                            <br />
-                            <label for="online-entry-options">
-                                Online Entry Options
-                            </label>
-                            <br />
-                            <input type="checkbox" value="TEXT" name="check-entry-option" id="chkbox-text-entry" />
-                            <label for="chkbox-text-entry">Text Entry</label>
-                            <br />
-                            <input type="checkbox" value="URL" name="check-entry-option" id="chkbox-url" />
-                            <label for="chkbox-url">Website URL</label>
-                            <br />
-                            <input type="checkbox" value="MEDIA" name="check-entry-option" id="chkbox-media" />
-                            <label for="chkbox-media">Media Recordings</label>
-                            <br />
-                            <input type="checkbox" value="ANNOTATION" name="check-entry-option"
-                                id="chkbox-annotation" />
-                            <label for="chkbox-annotation">Student Annotation</label>
-                            <br />
-                            <input type="checkbox" value="FILE" name="check-entry-option" id="chkbox-file" />
-                            <label for="chkbox-file">File Uploads</label> <br />
-                            <br />
-                            <label for="submission-attempts">
-                                Submission Attempts
-                            </label>
-                            <br />
-                            <select id="submission-attempts">
-                                <option>Unlimited</option>
-                            </select> <br />
-                            <br />
-                            <label for="plagiarism-review">
-                                Plagiarism Review
-                            </label>
-                            <br />
-                            <select id="plagiarism-review">
-                                <option>None</option>
-                            </select> <br />
-                            <br />
-                            <label for="group-assignment">
-                                Group Assignment
-                            </label>
-                            <br />
-                            <input type="checkbox" value="grpAssignment" name="check-entry-option"
-                                id="chkbox-grp-assignment" />
-                            <label for="chkbox-grp-assignment">This is a group assignment</label> <br />
-                            <br />
-                            <label for="group-assignment">
-                                Peer Reviews
-                            </label>
-                            <br />
-                            <input type="checkbox" value="peerReviews" name="check-entry-option"
-                                id="chkbox-peer-reviews" />
-                            <label for="chkbox-peer-reviews">Require peer reviews</label><br />
-                            <br />
-                            <label for="assign">
-                                Assign <br />
-                                Assign to
-                            </label>
-                            <br />
-                            <input id="assign" placeholder="Everyone" /><br />
-                            <br />
-                            <label for="due">Due</label><br />
-                            <input id="due" type="date" value="2023-12-15" /><br />
-                            <br />
-                            <label for="available-from">Available From</label><br />
-                            <input id="available-from" type="date" value="2023-12-15" /><br />
-                            <br />
-                            <label for="until">Until</label><br />
-                            <input id="until" type="date" value="2023-12-15" /><br />
-                            <br />
-                            <form action="index.html">
-                                <button>Cancel</button>
-                                <button>Save</button>
-                            </form>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                                <option>Option1</option>
+                                <option>Option2</option>
+                                <option>Option3</option>
+                            </select>
+                            <div class="checkbox-input">
+                                <input class="form-check-input" type="checkbox">
+                                Do not count this assignment toward the final grade
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row input-fields">
+                        <div class="col input-name">
+                            <span class="input-field-name">
+                                <span class="float-end">Submission Type
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col input-field">
+                            <div class="assignment-input-box">
+                                <div class="assignment-inputs-boxed">
+                                    <select class="boxed-input form-control assignment-info-fields-lower-boxed">
+                                        <option>Online</option>
+                                        <option>Option1</option>
+                                        <option>Option2</option>
+                                        <option>Option3</option>
+                                    </select>
+                                    <span class="boxed-input boxed-headers">
+                                        <label for="boxed-headers">
+                                            Online Entry Options
+                                        </label>
+                                    </span>
+                                    <div>
+                                        <input class="boxed-input form-check-input" type="checkbox">
+                                        <span class="checkbox-value">Text Entry</span>
+                                    </div>
+                                    <div>
+                                        <input class="boxed-input form-check-input" type="checkbox">
+                                        <span class="checkbox-value">Website URL</span>
+                                    </div>
+                                    <div>
+                                        <input class="boxed-input form-check-input" type="checkbox">
+                                        <span class="checkbox-value">Media Recordings</span>
+                                    </div>
+                                    <div>
+                                        <input class="boxed-input form-check-input" type="checkbox">
+                                        <span class="checkbox-value">Student Annotation</span>
+                                    </div>
+                                    <div>
+                                        <input class="boxed-input form-check-input" type="checkbox">
+                                        <span class="checkbox-value">File Uploads</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row input-fields">
+                        <div class="col input-name">
+                            <span class="input-field-name">
+                                <span class="float-end">Assign
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col input-field">
+                            <div class="assignment-input-box">
+                                <div class="assignment-inputs-boxed">
+                                    <span class="boxed-headers">
+                                        <label for="boxed-headers">
+                                            Assign to
+                                        </label>
+                                    </span>
+                                    <input id="search-input" placeholder="Everyone"
+                                        class="form-control assign-inputs-boxed" />
+                                </div>
+                                <div class="assignment-inputs-boxed">
+                                    <span class="boxed-headers">
+                                        <label for="boxed-headers">
+                                            Due
+                                        </label>
+                                    </span>
+                                    <input type="date" id="search-input" value="2023-09-23"
+                                        class="form-control assign-inputs-boxed" />
+                                </div>
+                                <div class="assignment-inputs-boxed row">
+                                    <div class="col assign-input">
+                                        <div class="assign-input-half">
+                                            <span class="boxed-headers">
+                                                <label for="boxed-headers">
+                                                    Available from
+                                                </label>
+                                            </span>
+                                            <input type="date" id="search-input" value="2023-09-23"
+                                                class="form-control assign-inputs-boxed-half" />
+                                        </div>
+                                    </div>
+                                    <div class="col assign-input">
+                                        <div class="assign-input-half">
+                                            <span class="boxed-headers">
+                                                <label for="boxed-headers">
+                                                    Until
+                                                </label>
+                                            </span>
+                                            <input type="date" id="search-input" value="2023-09-23"
+                                                class="form-control assign-inputs-boxed-half" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row footer">
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <input class="boxed-input form-check-input" type="checkbox">
+                                Notify users that this content has changed
+                            </div>
+                            <div class="col">
+                                <form action="index.html">
+                                    <button class="btn bottom-btns btn-secondary float-end">Cancel</button>
+                                    <button class="btn bottom-btns btn-danger float-end">Save</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

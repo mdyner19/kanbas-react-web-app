@@ -70,17 +70,9 @@
     border-left: solid;
 }
 
-.assignment-page-header {
-    padding: 15px;
+.course-page-header {
+    padding: 10px;
     height: 70px;
-    width: 100%;
-    display: flex;
-}
-
-.assignment-page-sub-header {
-    padding: 15px;
-    height: 70px;
-    width: 100%;
 }
 
 .breadcrumb-item.course-page-name {
@@ -119,27 +111,32 @@
     margin: 2px;
 }
 
+.form-control.top-btns {
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    margin: 2px;
+}
+
 .top-btns-hr {
     margin-top: 30px;
     margin-bottom: 0;
+}
+
+.col.right-btns {
+    width: auto;
+    flex: 0;
 }
 
 .list-group.modules {
     margin: 20px;
 }
 
-.list-group-item.assignment-items-header {
+.list-group-item.module-items {
     font-weight: bold;
     border-left-color: green;
     border-left-width: 3px;
 }
-
-.list-group-item.assignment-items {
-    border-left-color: green;
-    border-left-width: 3px;
-    display: flex;
-}
-
 .list-group-item.module-items.list-group-item-secondary {
     font-weight: bold;
     border-left-width: 0;
@@ -158,134 +155,98 @@
     color: red;
 }
 
-.assignment-header {
+.course-status {
+    font-size: 16px;
+}
+
+.btn.right-btns {
     font-size: 12px;
-}
-.col.assignment-left-icons {
-    flex: 0;
-}
-.float-start.assignment-left-icons {
     width: auto;
-    display: flex;
-    margin-top:18px;
-}
-.assignment-desc {
-    width: auto;
-    margin-left:20px;
-}
-
-.col.assignment-right-icons {
-    flex: 0;
-}
-.float-end.assignment-right-icons {
-    width: auto;
-    display: flex;
-    margin-top:18px;
-}
-
-.assignment-title {
-    font-weight: bold;
-}
-
-.assignment-description {
-    font-size:14px;
-    color: gray;
-}
-
-.assignment-type-header {
-    margin-left: 20px;
-}
-
-.assignment-link {
-    text-decoration: none;
     color: black;
 }
 
-
-.published {
-    color: green;
-    font-size: 16px;
-    margin: 8px;
+.btn.right-btns.btn-success {
+    color: white;
 }
 
-.main-assignment-content {
-    margin: 0 20px;
-}
-
-.form-control.assignment-info-fields {
-    margin: 10px 0;
-}
-
-.row.input-fields {
+.row.right-top-btns {
     display: flex;
-    margin: 10px 0;
+    margin-left: 0px;
 }
 
-.col.input-name {
-    flex: 0;
+.row.right-btns {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
 }
 
-.form-control.assignment-info-fields-lower {
-    width: 500px;
-}
-
-.input-field-name {
+.btn.right-mid-btns {
+    font-size: 12px;
+    color: black;
+    margin: 3px 0;
     width: 200px;
-    display:block;
 }
 
-.checkbox-input {
+.right-headers {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.right-hrs {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.right-module-links {
+    text-decoration: none;
+    color: red;
+    font-size: 14px;
+    text-wrap: nowrap;
+}
+
+.right-link-content {
+    color: gray;
+    font-size: 12px;
+}
+
+.to-do {
     margin: 10px 0;
 }
 
-.assignment-input-box {
-    border-width: 1px;
-    border-style: solid;
-    border-color: gray;
-    border-radius: 8px;
-    width:500px;
+.right-links {
+    margin: 10px
 }
 
-.form-control.assignment-info-fields-lower-boxed {
-    width: 270px;
+.minimized-header {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    height: 70px;
+    display: flex;
 }
 
-.assignment-inputs-boxed {
-    margin: 15px;
+.min-header-content {
+    width: 100%;
 }
 
-.boxed-headers {
-    font-weight: bold;
+.min-header {
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    width: inherit;
+
 }
 
-.boxed-input {
-    margin:18px 0;
+.min-header-course {
+    width: min-content;
 }
 
-.checkbox-value {
-    margin: 3px 10px;
+.min-header-link {
+    text-decoration: none;
 }
 
-.assign-inputs-boxed {
-    width: 465px;
-}
-
-.col.assign-input {
-    padding: 0;
-}
-
-.form-control.assign-inputs-boxed-half {
-    width: 210px;
-}
-
-.assign-input-half {
-    margin: 0 25px;
-}
-
-.row.footer {
-    margin: 40px;
-}
-
-.btn.bottom-btns {
-    margin: 2px;
+.course-navigation-chevron.float-end.col {
+    width: auto;
 }

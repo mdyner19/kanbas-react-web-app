@@ -1,0 +1,13 @@
+.x {
+    width: 100%;
+}
+
+.nav-item-link {
+    text-decoration: none;
+    color: red;
+}
+
+.list-group-item.nav-item {
+    border: none;
+    margin: 7px;
+}

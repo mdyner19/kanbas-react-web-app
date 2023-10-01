@@ -78,3 +78,47 @@
     background-color: white;
     border-left: solid;
 }
+
+.breadcrumb-item.course-page-name {
+    margin-left: 10px;
+    font-size: 20px;
+    color: red;
+}
+
+.fas.fa-bars.top-left {
+    margin-top: 7px;
+}
+
+.breadcrumb-item.active.course-page-name {
+    font-size: 20px;
+}
+
+.float-end.top-btns {
+    height: 50px;
+    display: flex;
+}
+
+.btn.btn-secondary.top-btns {
+    font-size: 12px;
+    width: auto;
+    height: 30px;
+    text-wrap: nowrap;
+    color: black;
+    margin: 2px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.btn.btn-secondary.top-btns.float-start.filter-btn {
+    margin: 8px 0;
+}
+
+.student-name {
+    color: red;
+}
+
+.grade-input {
+    text-align: center;
+}

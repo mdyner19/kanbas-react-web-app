@@ -1,0 +1,42 @@
+.minimized-header {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    height: 70px;
+}
+
+.min-header-content {
+    width: 100%;
+}
+
+.min-header {
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    width: inherit;
+
+}
+
+.min-header-course {
+    width: min-content;
+}
+
+.min-header-link {
+    text-decoration: none;
+}
+
+.course-navigation-chevron.float-end.col {
+    width: auto;
+}
+
+.list-group-item.nav-item {
+    border: none;
+    font-size: 14px;
+}
+
+.nav-item-link {
+    text-decoration: none;
+    color: red;
+}
