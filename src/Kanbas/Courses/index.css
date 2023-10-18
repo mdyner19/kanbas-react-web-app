@@ -1,0 +1,39 @@
+.dashboard-wrapper {
+    width: 100%;
+}
+
+.fas.fa-bars.top-left {
+    margin: 0 10px 15px 10px;
+    color: red;
+}
+
+.course-page-header {
+    padding: 0 10px;
+    display: flex;
+    width: inherit;
+}
+
+.breadcrumb-item.course-page-name {
+    font-size: 20px;
+    color: red;
+}
+
+.breadcrumb-item.active.course-page-name {
+    font-size: 20px;
+}
+
+.breadcrumb > .breadcrumb-item + .breadcrumb-item:before {
+    color: #ccc;
+    content: "> ";
+    padding: 0 5px;
+}
+
+.course-name-hr {
+    margin: 0 20px;
+    width:100%;
+}
+
+.row.course-navigation-wrapper {
+    display: flex;
+    margin: 20px;
+}

@@ -1,0 +1,81 @@
+.col.home-wrapper {
+    display: flex;
+}
+
+.col-xs-3.right-btns{
+    display:grid;
+    margin: 15px;
+}
+
+.btn.right-btns {
+    font-size: 12px;
+    width: auto;
+    color: black;
+}
+
+.btn.right-btns.btn-success {
+    color: white;
+}
+
+.row.right-top-btns {
+    display: flex;
+    margin-left: 0px;
+}
+
+.row.right-btns {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+    display:grid;
+}
+
+.btn.right-mid-btns {
+    font-size: 12px;
+    color: black;
+    margin: 3px 0;
+    width: 200px;
+}
+
+.right-headers {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.right-hrs {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.right-module-links {
+    text-decoration: none;
+    color: red;
+    font-size: 14px;
+    text-wrap: nowrap;
+}
+
+.right-link-content {
+    color: gray;
+    font-size: 12px;
+}
+
+.to-do {
+    margin: 10px 0;
+    width: 200px;
+}
+
+.coming-up {
+    width: 200px;
+}
+
+.right-links {
+    margin: 10px
+}
+
+.icon-todo{
+    color: red;
+    margin: 5px;
+}
+.icon-cal {
+    color: gray;
+    margin: 5px;
+}

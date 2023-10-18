@@ -1,0 +1,64 @@
+
+.assignment-editor-page-sub-header {
+    height: 40px;
+    width: 100%;
+}
+
+.float-end.top {
+    height: fit-content;
+    display: flex;
+    width:fit-content;
+}
+
+.published {
+    color: green;
+    font-size: 16px;
+    margin: 8px;
+}
+
+.btn.btn-secondary.top-btns {
+    font-size: 12px;
+    width: auto;
+    height: 30px;
+    text-wrap: nowrap;
+    color: black;
+    margin: 2px;
+}
+
+.assignment-editor-hr {
+    margin: 15px;
+}
+
+.main-assignment-content {
+    margin: 0 20px;
+}
+
+.assignment-name {
+    padding: 0;
+}
+
+.form-control.assignment-info-fields {
+    margin: 10px 0;
+}
+
+.row.input-fields {
+    display: flex;
+    margin: 10px 0;
+}
+
+.input-field-name {
+    width: 200px;
+    display:block;
+}
+.row.input-fields {
+    display: flex;
+    margin: 10px 0;
+}
+
+.bottom-btns {
+    padding: 0;
+}
+
+.bottom-btn {
+    margin: 0 5px;
+}

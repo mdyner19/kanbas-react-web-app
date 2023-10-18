@@ -1,0 +1,22 @@
+.student-name {
+    color: red;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.grade-input {
+    text-align: center;
+}
+
+.float-end.top-grades-btns {
+    height: 50px;
+    display: flex;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.btn.btn-secondary.top-btns.float-start.filter-btn {
+    margin: 10px 0;
+}

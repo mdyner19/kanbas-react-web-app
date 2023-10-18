@@ -1,0 +1,23 @@
+.list-group.course-navigation {
+    list-style-type: none;
+    width: inherit;
+}
+
+.list-group-item.course-navigation {
+    border: none;
+    color: red;
+    text-wrap: wrap;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.list-group-item.course-navigation.active {
+    border: none;
+    color: black;
+    background-color: white;
+    border-left: solid;
+}
+
+.col.list-group {
+    width:fit-content;
+}

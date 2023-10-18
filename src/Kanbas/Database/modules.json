@@ -1,0 +1,56 @@
+[
+    {
+      "_id": "M101",
+      "name": "HTML",
+      "description": "Introduction to web development and HTML",
+      "course": "CS4550"
+    },
+    {
+      "_id": "M102",
+      "name": "CSS",
+      "description": "Styling your web page",
+      "course": "CS4550"
+    },
+    {
+      "_id": "M103",
+      "name": "JavaScript",
+      "description": "Responsive design",
+      "course": "CS4550"
+    },
+    {
+      "_id": "M201",
+      "name": "Introduction to the course",
+      "description": "Unerstanding basic networking concepts and principles",
+      "course": "CS3700"
+    },
+    {
+      "_id": "M202",
+      "name": "Socket Basics",
+      "description": "Learn about socket connections",
+      "course": "CS3700"
+    },
+    {
+      "_id": "M203",
+      "name": "FTP Client",
+      "description": "Understanding file transfer protocol",
+      "course": "CS3700"
+    },
+    {
+      "_id": "M301",
+      "name": "Introduction to the course",
+      "description": "Welcome to software development",
+      "course": "CS4500"
+    },
+    {
+      "_id": "M302",
+      "name": "Design Patterns",
+      "description": "Creating well designed software",
+      "course": "CS4500"
+    },
+    {
+      "_id": "M303",
+      "name": "Object Oriented Design",
+      "description": "Introduction to object oriented programming",
+      "course": "CS4500"
+    }
+  ]

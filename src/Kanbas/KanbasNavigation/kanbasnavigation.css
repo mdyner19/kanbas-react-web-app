@@ -1,0 +1,47 @@
+.wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: top;
+    width: 80px;
+    display:flex;
+    flex:0;
+    background-color: black;
+}
+
+.list-group.kanbas-navigation {
+    width: inherit;
+    list-style-type: none;
+}
+
+.kanbas-navigation-li {
+    text-align: center;
+    background-color: black;
+    width: inherit;
+}
+
+.list-group-item.kanbas-navigation {
+    background-color: black;
+    width: inherit;
+    color: white;
+    font-size: 14px;
+    padding: 5px;    
+    display: grid;
+    border: none;
+}
+
+.list-group-item.kanbas-navigation.active {
+    background-color: white;
+    color:red;
+    border:none;
+}
+
+.kanbas-navigation-labels {
+    margin: 5px 0 0;
+}
+
+.white {
+    color: white;
+}
+
+.red {
+    color: red;
+}

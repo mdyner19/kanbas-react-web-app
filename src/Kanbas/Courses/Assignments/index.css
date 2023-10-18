@@ -1,0 +1,91 @@
+.assignment-page-sub-header {
+    display: flex;
+    width: 100%;
+}
+
+.float-end.top-btns {
+    height: 50px;
+    width: 30%;
+    display: flex;
+}
+
+.float-start.top-btns {
+    width: 70%;
+}
+
+#search-input {
+    width: 225px;
+}
+
+.btn.btn-secondary.top-btns {
+    font-size: 12px;
+    width: auto;
+    height: 30px;
+    text-wrap: nowrap;
+    color: black;
+    margin: 2px;
+}
+
+.btn.btn-danger.top-btns {
+    font-size: 12px;
+    width: auto;
+    height: 30px;
+    text-wrap: nowrap;
+    margin: 2px;
+}
+
+.assignment-hr {
+    margin-top:0;
+}
+
+.assignments {
+    list-style-type: none;
+}
+
+.list-group-item.assignment-items-header {
+    font-weight: bold;
+}
+
+.list-group-item.assignment-items {
+    border-left-color: green;
+    border-left-width: 3px;
+    display: flex;
+}
+
+.assignment-type-header {
+    margin-left: 20px;
+}
+
+.col.icons{
+    flex: 0;
+}
+
+.assignment-icons {
+    width: auto;
+    display: flex;
+    margin-top:15px;
+}
+
+.assignment-title {
+    font-weight: bold;
+    width: auto;
+}
+
+.assignment-link {
+    text-decoration: none;
+    color: black;
+}
+
+.green {
+    color: green;
+}
+
+.assignment-desc {
+    width: auto;
+    margin-left:20px;
+}
+
+.assignment-description {
+    font-size:14px;
+    color: gray;
+}

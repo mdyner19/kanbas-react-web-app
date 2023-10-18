@@ -1,0 +1,35 @@
+.dashboard-wrapper {
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.published-courses-label {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.cards-wrapper {
+    margin: 15px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card.course-card {
+    padding: 0;
+    margin: 15px;
+    width: 235px;
+}
+
+.course-link {
+    text-decoration: none;
+}
+
+.card-body.desc {
+    padding: 12px;
+}
+
+.card-text {
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+}

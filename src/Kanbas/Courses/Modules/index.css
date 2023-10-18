@@ -1,0 +1,60 @@
+.course-page-header {
+    padding: 0;
+}
+
+.top-btns {
+    height: 50px;
+    width: 100%;
+    float: right;
+}
+
+.btn.btn-secondary.top-btns {
+    font-size: 12px;
+    width: auto;
+    height: 30px;
+    text-wrap: nowrap;
+    color: black;
+    margin: 2px;
+}
+
+.btn.btn-danger.top-btns {
+    font-size: 12px;
+    width: auto;
+    height: 30px;
+    text-wrap: nowrap;
+    margin: 2px;
+}
+
+.form-control.top-btns {
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    margin: 2px;
+}
+
+.top-btns-hr {
+    margin-top: 0;
+    padding:0;
+}
+
+.col.module-wrapper {
+    display: grid;
+}
+
+.list-group.modules {
+    margin: 20px 0;
+    border-radius: 0;
+}
+
+.list-group-item.module-items {
+    font-weight: bold;
+}
+
+.module-desc {
+    font-weight: normal;
+    margin: 0;
+}
+
+.main-content {
+    margin:12px;
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "CS4550",
+        "name": "Web Development",
+        "number": "CS4550",
+        "startDate": "2023-01-10",
+        "endDate": "2023-05-15"
+    },
+    {
+        "_id": "CS3700",
+        "name": "Networks",
+        "number": "CS3700",
+        "startDate": "2023-01-10",
+        "endDate": "2023-05-15"
+    },
+    {
+        "_id": "CS4500",
+        "name": "Software Development",
+        "number": "CS4500",
+        "startDate": "2023-01-10",
+        "endDate": "2023-05-15"
+    }
+]
