@@ -58,3 +58,32 @@
 .main-content {
     margin:12px;
 }
+
+.float-end.edit-module-btns {
+    margin: 5px;
+    font-size: 12px;
+    height: 30px;
+}
+
+.new-module-btn.btn.btn-secondary {
+    margin: 5px;
+    font-size: 12px;
+    height: 30px;
+}
+
+.form-control.new-module-input {
+    width: 150px;
+    margin: 5px;
+}
+
+.form-control.new-module-input.desc {
+    width: 300px;
+    margin: 5px;
+    height: 24px;
+}
+
+.new-module-wrapper {
+    height: fit-content;
+    margin: 10px;
+    display: flex;
+}

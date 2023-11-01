@@ -64,16 +64,19 @@
     width: auto;
     display: flex;
     margin-top:15px;
+    margin-left: 15px;
 }
 
 .assignment-title {
     font-weight: bold;
-    width: auto;
+    width: fit-content;
 }
 
 .assignment-link {
     text-decoration: none;
     color: black;
+    width: 100%;
+    display: flex;
 }
 
 .green {
@@ -81,11 +84,29 @@
 }
 
 .assignment-desc {
-    width: auto;
+    width: fit-content;
     margin-left:20px;
 }
 
 .assignment-description {
     font-size:14px;
     color: gray;
+}
+
+.btn.edit-assignment-btns {
+    margin:8px 3px 0;
+    height: 30px;
+    font-size:12px;
+}
+.assignment-title-desc {
+    display:flex;
+}
+
+.assignment-desc-display {
+    color: gray;
+    margin-left: 8px;
+}
+
+.bold {
+    font-weight: bold;
 }

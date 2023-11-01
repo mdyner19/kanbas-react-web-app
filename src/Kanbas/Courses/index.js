@@ -10,12 +10,12 @@ import Assignments from "./Assignments"
 import Grades from "./Grades"
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 
-function Courses() {
+function Courses({ courses }) {
     const { courseId } = useParams();
     const { pathname } = useLocation();
     const pathList = pathname.split("/")
 
-    const course = db.courses.find((course) => course._id === courseId);
+    const course = courses.find((course) => course._id === courseId);
 
     return (
         <div className="dashboard-wrapper col">
@@ -24,7 +24,7 @@ function Courses() {
                     <ol className="breadcrumb">
                         <i className="fas fa-bars top-left fa-2x"></i>
                         <li className="breadcrumb-item course-page-name">
-                            <label for="course-page-name">{courseId}</label>
+                            <label for="course-page-name">{course.number}</label>
                         </li>
                         <li className="breadcrumb-item active course-page-name" aria-current="page">{pathList[4]}</li>
                     </ol>

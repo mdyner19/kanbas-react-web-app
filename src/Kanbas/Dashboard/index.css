@@ -33,3 +33,30 @@
     font-size: 12px;
     margin-top: 5px;
 }
+
+.new-course-wrapper {
+    display: flex;
+}
+.new-course-form {
+    display: flex;
+    width: auto;
+}
+
+.form-control.new-course-input {
+    width: 150px;
+    margin: 5px;
+}
+
+.new-course-btns-wrapper {
+    width: 100%;
+}
+
+.new-course-btn {
+    margin: 5px;
+}
+
+.edit-course-btn.btn {
+    margin: 3px;
+    font-size: 12px;
+    height: 30px;
+}

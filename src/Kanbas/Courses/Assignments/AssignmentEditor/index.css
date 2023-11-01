@@ -50,10 +50,6 @@
     width: 200px;
     display:block;
 }
-.row.input-fields {
-    display: flex;
-    margin: 10px 0;
-}
 
 .bottom-btns {
     padding: 0;
@@ -61,4 +57,44 @@
 
 .bottom-btn {
     margin: 0 5px;
+}
+
+.col.input-name {
+    flex: 0;
+}
+
+.form-control.assignment-info-fields-lower {
+    width: 100%;
+}
+
+.assignment-input-box {
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 8px;
+    width:500px;
+}
+
+.assignment-inputs-boxed {
+    margin: 15px;
+}
+
+.boxed-headers {
+    font-weight: bold;
+}
+
+.assign-inputs-boxed {
+    width: 100%;
+}
+
+.col.assign-input {
+    padding: 0;
+}
+
+.assign-input-half {
+    margin: 0 25px;
+}
+
+.form-control.assign-inputs-boxed-half {
+    width: 100%;
 }
