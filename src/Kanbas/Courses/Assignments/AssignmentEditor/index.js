@@ -11,11 +11,25 @@ import {
     selectAssignment,
 } from "../assignmentReducer";
 
+import { createAssignment } from "../client";
+import * as client from "../client";
+
 function AssignmentEditor() {
     const navigate = useNavigate()
     const assignment = useSelector((state) => state.assignmentReducer.assignment);
     const dispatch = useDispatch();
     const { courseId } = useParams();
+
+    const handleAddAssignment = () => {
+        createAssignment(courseId, assignment).then((assignment) => {
+            dispatch(addAssignment(assignment));
+        });
+    };
+    const handleUpdateAssignment = async () => {
+        const status = await client.updateAssignment(assignment);
+        dispatch(updateAssignment(assignment));
+    };
+
 
     return (
         <div className="col">
@@ -88,8 +102,8 @@ function AssignmentEditor() {
                                         onChange={(e) =>
                                             dispatch(selectAssignment({ ...assignment, dueDate: e.target.value }))}
                                         className="form-control assign-inputs-boxed"
-                                        placeholder="2023-12-06" 
-                                        type="date"/>
+                                        placeholder="2023-12-06"
+                                        type="date" />
                                 </div>
                                 <div className="assignment-inputs-boxed row">
                                     <div className="col assign-input">
@@ -104,8 +118,8 @@ function AssignmentEditor() {
                                                 onChange={(e) =>
                                                     dispatch(selectAssignment({ ...assignment, availableFromDate: e.target.value }))}
                                                 className="form-control assign-inputs-boxed-half"
-                                                placeholder="2023-12-06" 
-                                                type="date"/>
+                                                placeholder="2023-12-06"
+                                                type="date" />
                                         </div>
                                     </div>
                                     <div className="col assign-input">
@@ -120,8 +134,8 @@ function AssignmentEditor() {
                                                 onChange={(e) =>
                                                     dispatch(selectAssignment({ ...assignment, availableUntilDate: e.target.value }))}
                                                 className="form-control assign-inputs-boxed-half"
-                                                placeholder="2023-12-06" 
-                                                type="date"/>
+                                                placeholder="2023-12-06"
+                                                type="date" />
                                         </div>
                                     </div>
                                 </div>
@@ -137,10 +151,10 @@ function AssignmentEditor() {
                             <button onClick={() => {
                                 if (assignment._id) {
                                     // If assignment exists, update it
-                                    dispatch(updateAssignment(assignment));
+                                    handleUpdateAssignment();
                                 } else {
                                     // If assignment doesn't exist, create it
-                                    dispatch(addAssignment({ ...assignment, course: courseId }));
+                                    handleAddAssignment();
                                 }
                                 navigate(`/Kanbas/Courses/${courseId}/Assignments`);
                             }}

@@ -1,4 +1,3 @@
-import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
 import CourseNavigation from "../CourseNavigation";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -9,13 +8,27 @@ import Modules from "./Modules"
 import Assignments from "./Assignments"
 import Grades from "./Grades"
 import AssignmentEditor from "./Assignments/AssignmentEditor";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({ courses }) {
+function Courses() {
     const { courseId } = useParams();
     const { pathname } = useLocation();
     const pathList = pathname.split("/")
+    const [course, setCourse] = useState({});
+    //const URL = "https://kanbas-node-server-app-mdyner-150e557f92ff.herokuapp.com/api/courses";
+    const API_BASE = process.env.REACT_APP_API_BASE;
+    const URL = `${API_BASE}/courses`;
 
-    const course = courses.find((course) => course._id === courseId);
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(
+            `${URL}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
 
     return (
         <div className="dashboard-wrapper col">

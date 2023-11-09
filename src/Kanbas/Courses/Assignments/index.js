@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -8,10 +8,26 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   deleteAssignment,
   selectAssignment,
+  setAssignments,
 } from "./assignmentReducer";
+import { findAssignmentsForCourse } from "./client";
+import * as client from "./client";
 
 function Assignments() {
+  const handleDeleteAssignment = (assignmentId) => {
+    client.deleteAssignment(assignmentId).then((status) => {
+      dispatch(deleteAssignment(assignmentId));
+    });
+  };
+
   const { courseId } = useParams();
+  useEffect(() => {
+    findAssignmentsForCourse(courseId)
+      .then((assignments) =>
+        dispatch(setAssignments(assignments))
+      );
+  }, [courseId]);
+
   const assignments = useSelector((state) => state.assignmentReducer.assignments);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -36,7 +52,7 @@ function Assignments() {
             <button
               onClick={() => {
                 // Create a new assignment
-                const newAssignment = { title: "New Assignment", description: "", points: "100", dueDate:"2023-12-06", availableFromDate: "2023-09-06", availableUntilDate: "2023-12-06" };
+                const newAssignment = { title: "New Assignment", description: "", points: "100", dueDate: "2023-12-06", availableFromDate: "2023-09-06", availableUntilDate: "2023-12-06" };
                 dispatch(selectAssignment(newAssignment));
                 navigateToAssignmentEditor();
               }}
@@ -101,7 +117,7 @@ function Assignments() {
               </Link>
               <button
                 className="btn edit-assignment-btns btn-danger"
-                onClick={() => dispatch(deleteAssignment(assignment._id))}>
+                onClick={() => handleDeleteAssignment(assignment._id)}>
                 Delete</button>
               <div className="col icons">
                 <div className="assignment-icons">

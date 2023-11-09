@@ -31,7 +31,10 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
                         <button onClick={addNewCourse} className="btn btn-secondary float-end new-course-btn">
                             Add
                         </button>
-                        <button onClick={updateCourse} className="btn btn-secondary float-end new-course-btn">
+                        <button onClick={(event) => {
+                            event.preventDefault();
+                            updateCourse(course)
+                        }} className="btn btn-secondary float-end new-course-btn">
                             Update
                         </button>
                     </div>
@@ -55,7 +58,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
                                     <button
                                         onClick={(event) => {
                                             event.preventDefault();
-                                            deleteCourse(course._id);
+                                            deleteCourse(course);
                                         }}
                                         className="edit-course-btn btn btn-danger">
                                         Delete
