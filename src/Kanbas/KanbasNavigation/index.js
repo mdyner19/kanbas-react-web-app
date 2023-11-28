@@ -52,6 +52,12 @@ function KanbasNavigation() {
                         </span>
                     </Link>
                 </li>
+                <li className="kanbas-navigation-li">
+                    <Link to={`/Kanbas/signin`}>Sign In</Link>
+                </li>
+                <li className="kanbas-navigation-li">
+                    <Link to={`/Kanbas/signup`}>Sign Up</Link>
+                </li>
                 {links.map((link, index) => (
                     <li className="kanbas-navigation-li">
                         <Link

@@ -2,6 +2,7 @@ import axios from "axios";
 //const COURSES_URL = "https://kanbas-node-server-app-mdyner-150e557f92ff.herokuapp.com/api/courses";
 //const ASSIGNMENTS_URL = "https://kanbas-node-server-app-mdyner-150e557f92ff.herokuapp.com/api/assignments";
 const API_BASE = process.env.REACT_APP_API_BASE;
+//const API_BASE = "https://kanbas-node-server-app-mdyner-150e557f92ff.herokuapp.com/api";
 const COURSES_URL = `${API_BASE}/courses`;
 const ASSIGNMENTS_URL = `${API_BASE}/assignments`;
 export const updateAssignment = async (assignment) => {
