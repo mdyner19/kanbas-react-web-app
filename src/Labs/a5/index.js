@@ -8,7 +8,7 @@ function Assignment5() {
         <>
             <h1>Assignment 5</h1>
             <div className="list-group">
-                <a href="https://kanbas-node-server-app-mdyner-150e557f92ff.herokuapp.com/a5/welcome"
+                <a href="https://kanbas-node-server-mdyner-a6-cb6605a3e180.herokuapp.com/a5/welcome"
                     className="list-group-item">
                     Welcome
                 </a>

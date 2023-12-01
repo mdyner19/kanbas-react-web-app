@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 function WorkingWithArrays() {
-    const API = "https://kanbas-node-server-app-mdyner-150e557f92ff.herokuapp.com/a5/todos";
+    const API = "https://kanbas-node-server-mdyner-a6-cb6605a3e180.herokuapp.com/a5/todos";
     const [todo, setTodo] = useState({
         id: 1,
         title: "NodeJS Assignment",

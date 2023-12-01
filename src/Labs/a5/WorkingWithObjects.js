@@ -9,7 +9,7 @@ function WorkingWithObjects() {
         completed: false,
         score: 0,
     });
-    const URL = "https://kanbas-node-server-app-mdyner-150e557f92ff.herokuapp.com/a5/assignment";
+    const URL = "https://kanbas-node-server-mdyner-a6-cb6605a3e180.herokuapp.com/a5/assignment";
     const fetchAssignment = async () => {
         const response = await axios.get(`${URL}`);
         setAssignment(response.data);
@@ -27,13 +27,13 @@ function WorkingWithObjects() {
         <div>
             <h3>Working With Objects</h3>
             <h4>Retrieving Objects</h4>
-            <a href="https://kanbas-node-server-app-mdyner-150e557f92ff.herokuapp.com/a5/assignment"
+            <a href="https://kanbas-node-server-mdyner-a6-cb6605a3e180.herokuapp.com/a5/assignment"
                 className="btn btn-primary me-2">
                 Get Assignment
             </a>
             <h4>Retrieving Properties</h4>
             <a
-                href="https://kanbas-node-server-app-mdyner-150e557f92ff.herokuapp.com/a5/assignment/title"
+                href="https://kanbas-node-server-mdyner-a6-cb6605a3e180.herokuapp.com/a5/assignment/title"
                 className="btn btn-primary me-2">
                 Get Title
             </a>
